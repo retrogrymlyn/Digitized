@@ -1,1 +1,19 @@
-Blahblah
+#Concept
+
+##Programmer is in regular world, interacting with computer, using it to write code in order to help out Game Character 
+##(GC is short)
+
+##GC is in computer (but feels like a game) interacting with programmer, who helps GC out in the computer world
+
+#####Programmer setting in the 1980's
+
+#####Decide whether we want 2D or 3D Objects
+
+#####Perspective: top-down, Sidescrolling, First person, Third Person, Second person
+
+#####What Method of in game Code to use. 
+
+#####Java? Python? Etc.
+
+#####none at all?
+
