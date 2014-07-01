@@ -1,3 +1,5 @@
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -13,9 +15,11 @@ public class Frame extends JPanel{
 	
 	private Image Background;
 	
+	public int second = 0;
+	
 	//gathers any Images and stores them in variables.
-	public void backgroundPanel(){
-		Background = Toolkit.getDefaultToolkit().getImage("resources/TestBackground.png");
+	public void gatherImages(){
+		Background = Toolkit.getDefaultToolkit().getImage("resources/BlackBackground.png");
 	}
 	
 	//The double buffer.
@@ -36,8 +40,14 @@ public class Frame extends JPanel{
 	
 	//The What actually paints.
 	public void paint(Graphics g){
-		backgroundPanel();
 		g.drawImage(Background, 0, 0, getWidth(), getHeight(), this);
+		g.setColor(Color.white);
+		g.setFont(new Font("TimesRoman",Font.PLAIN, getHeight()/10));
+		if(second == 1){
+			g.drawString("Digitized_", getWidth()/70, getHeight()/10);
+		}else{
+			g.drawString("Digitized", getWidth()/70, getHeight()/10);
+		}
 	}
 	
 }

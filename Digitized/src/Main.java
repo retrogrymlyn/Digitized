@@ -4,6 +4,7 @@ public class Main {
 	static GameThread thread = new GameThread();
 
 	public static void main(String[] args) {
+		window.frame.gatherImages();
 		thread.start();
 		window.startWindow();
 	}
