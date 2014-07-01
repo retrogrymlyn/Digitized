@@ -11,8 +11,9 @@ public class Window {
 
 	private final String TITLE = "Digitized Alpha";
 	
-	private Frame frame = new Frame();
+	public Frame frame = new Frame();
 	
+	//Starts the window
 	public void startWindow(){
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setSize(WIDTH, HEIGHT);

@@ -1,0 +1,22 @@
+
+public class Main implements Runnable {
+	
+	Thread thread = new Thread();
+	Window window = new Window();
+	
+	public void main(String[] args){
+		thread.start();
+		window.startWindow();
+	}
+	
+	public void run() {
+		window.frame.repaint();
+		try {
+			Thread.sleep(17);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+}

@@ -1,7 +1,11 @@
-
 public class Main {
-	public static void main(String[] args){
-		Window window = new Window();
+	
+	static Window window = new Window();
+	static GameThread thread = new GameThread();
+
+	public static void main(String[] args) {
+		thread.start();
 		window.startWindow();
 	}
+
 }

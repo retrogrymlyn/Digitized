@@ -1,0 +1,26 @@
+
+public class GameThread implements Runnable {
+	
+	Thread thread = new Thread(this);
+
+	public void start(){
+		if(!thread.isAlive()){
+			thread.start();
+		}
+	}
+	
+	public void run() {
+		while (true){
+			System.out.println("line");
+			Main.window.frame.x += Main.window.frame.dx;
+			Main.window.frame.y += Main.window.frame.dy;
+			Main.window.frame.repaint();
+			try {
+				Thread.sleep(17);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

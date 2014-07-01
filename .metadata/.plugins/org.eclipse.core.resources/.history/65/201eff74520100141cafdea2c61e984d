@@ -1,0 +1,14 @@
+
+public class Thread implements Runnable {
+	
+	Thread thread = new Thread(this);
+
+	public void start(){
+		if()
+	}
+	
+	public void run() {
+		
+	}
+
+}
