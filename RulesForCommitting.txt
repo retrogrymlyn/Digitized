@@ -18,7 +18,8 @@
 
 	Reason = If this isn't obvious, you should probably not be making any computer software or art.
 
-6. ALL ART NEEDS TO HAVE TRANSPARENT BACKGROUNDS, unless completely filled pixel by pixel (.i.e. Textures)
+6. ALL ART NEEDS TO HAVE TRANSPARENT BACKGROUNDS, SPRITES NEED TO BE ON BOTTOM LAYER, AND YOU NEED TO SAVE PNG's AND PHOTOSHOP DOCUMENTS SO YOU CAN EDIT
+	THEM!!!!!
 
 	Reason = Helps Programming move smoothly
 
