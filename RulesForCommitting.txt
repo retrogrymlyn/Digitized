@@ -1,0 +1,21 @@
+1. Camel everything. (that means type LikeThisInsteadOf like this.) Caps for first letter of new words. No spaces in file names. 
+
+	Reason for this rule is for compatibility purposes, All programs need to be able to read any file we hand them. NO SPACES!!!
+
+2. Try to use file types that can be used with current programming languages... I.E. (.PNG, .XMB, .JAR for java. Etc.)
+
+	Reason for this rule is for ease of access.
+
+3. Keep Commits as simple as possible, give quick consise summaries.
+
+	Reason being time.
+
+4. Make revisions of art and textures when you learn something that could make previous art better.
+
+	Reason being, Makes game prettier. Also, more of a guideline. Overall, gameplay is most important.
+
+5. Work Hard, Create an awesome game.
+
+	If this isn't obvious, you should probably not be making any computer software or art.
+
+6. Kyle is cool
