@@ -1,0 +1,5 @@
+PGC = Programmer Main Character
+
+GC = Ingame Main Character
+
+Any more place in here!
