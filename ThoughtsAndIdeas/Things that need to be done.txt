@@ -4,7 +4,7 @@
 2. Options Menu. Display needs to behave like you are editing Command line Variables.
 
 3. In Game Textures:
-		Grass v
+		Grass -
 		Dirt
 		Sand
 		Mud
@@ -38,7 +38,7 @@
 		This needs to be absolutely PERFECT. 
 		No seriously. Be as OCD as possible.
 	
-		Movement needs to be precise and tight.
+		Movement needs to be precise and tight Super Meat Boy Esque.
 		Need to be able to edit abilities and movement in game as per the PRC (Programmer Character)
 		Need to be able to swim.
 		Need to make sounds (i.e. hurt sounds, death sounds, Breathing from water sounds, emotion based sounds, etc.)
