@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+
+
+public class Window {
+	private JFrame window = new JFrame();
+	
+	private final int WIDTH = 800;
+	private final int HEIGHT = 450;
+	
+	public void startWindow(){
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(WIDTH, HEIGHT);
+		
+		window.setVisible(true);
+	}
+}
