@@ -1,0 +1,47 @@
+1. Main Menu for game. (talk to Kyle about this, this is a bigger project than you think, and he has an awesome idea for it. remember, this will
+			be one of the first things people see.)
+
+2. Options Menu. Display needs to behave like you are editing Command line Variables.
+
+3. In Game Textures:
+		Grass v
+		Dirt
+		Sand
+		Mud
+		SWAMP
+			Lillypads
+			Mucky?
+			Aquatic Plants
+			Aquatic Flowers
+		Water
+			Water Depth 1
+			Water Depth 2
+			Water Depth 3
+			Water Depth 4
+			Water Depth Inf
+
+	Any others, put them on this list!
+
+
+4. Texture Coding:
+		Grass makes squish sound
+		Dirt makes packing sound
+		Sand makes squishy sound
+		Mud makes moist squash sound
+		Lilly Pads make Splash sound
+		Aquatic Plants make splash sound
+		Aquatic Flowers make splash sound
+		Water makes different sound per the depth
+		Water has multiple Levels... Need to talk about this one. (edit once confirmed)
+
+5. Sprite Coding:
+		This needs to be absolutely PERFECT. 
+		No seriously. Be as OCD as possible.
+	
+		Movement needs to be precise and tight.
+		Need to be able to edit abilities and movement in game as per the PRC (Programmer Character)
+		Need to be able to swim.
+		Need to make sounds (i.e. hurt sounds, death sounds, Breathing from water sounds, emotion based sounds, etc.)
+		
+			
+Add to this list when and if you want or need something done. 
