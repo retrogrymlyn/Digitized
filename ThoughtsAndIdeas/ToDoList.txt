@@ -1,9 +1,11 @@
-1. Main Menu for game. (talk to Kyle about this, this is a bigger project than you think, and he has an awesome idea for it. remember, this will
+1. Create a Variable window with possible different sizes and custom resizing for the game
+
+2. Main Menu for game. (talk to Kyle about this, this is a bigger project than you think, and he has an awesome idea for it. remember, this will
 			be one of the first things people see.)
 
-2. Options Menu. Display needs to behave like you are editing Command line Variables.
+3. Options Menu. Display needs to behave like you are editing Command line Variables.
 
-3. In Game Textures:
+4. In Game Textures:
 		Grass -
 		Dirt
 		Sand
@@ -23,7 +25,7 @@
 	Any others, put them on this list!
 
 
-4. Texture Coding:
+5. Texture Coding:
 		Grass makes squish sound
 		Dirt makes packing sound
 		Sand makes squishy sound
@@ -34,7 +36,7 @@
 		Water makes different sound per the depth
 		Water has multiple Levels... Need to talk about this one. (edit once confirmed)
 
-5. Sprite Coding:
+6. Sprite Coding:
 		This needs to be absolutely PERFECT. 
 		No seriously. Be as OCD as possible.
 	
@@ -44,4 +46,4 @@
 		Need to make sounds (i.e. hurt sounds, death sounds, Breathing from water sounds, emotion based sounds, etc.)
 		
 			
-Add to this list when and if you want or need something done. 
+Add to this list when and if you want or need something done... Or change/subtract things if you finish parts of them
