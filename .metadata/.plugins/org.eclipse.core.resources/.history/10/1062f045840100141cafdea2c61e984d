@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class Main {
 	
@@ -6,10 +6,12 @@ public class Main {
 	static GameThread thread = new GameThread();
 
 	public static void main(String[] args) {
-		window.TitleScreen = true;
 		window.frame.gatherImages();
 		thread.start();
 		window.startWindow();
+		Scanner keyboard = new Scanner(System.in);
+		String Input = keyboard.next();
+		
 	}
 
 }

@@ -29,10 +29,8 @@ public class Window implements KeyListener {
 	}
 
 	public void keyPressed(KeyEvent e) {
-		if (e.getKeyCode() != KeyEvent.VK_SHIFT) {
+		if (e.getKeyChar() != KeyEvent.VK_SHIFT) {
 			Main.window.frame.UserInput += e.getKeyChar();
-		}else if(e.getKeyCode() == KeyEvent.VK_BACK_SPACE){
-			
 		}
 	}
 
