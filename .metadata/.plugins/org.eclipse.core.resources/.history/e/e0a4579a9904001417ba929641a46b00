@@ -29,15 +29,13 @@ public class Window implements KeyListener {
 	}
 
 	public void keyPressed(KeyEvent e) {
-		if (e.getKeyCode() != KeyEvent.VK_SHIFT	&& e.getKeyCode() != KeyEvent.VK_BACK_SPACE && e.getKeyCode() != KeyEvent.VK_ENTER) {
+		if (e.getKeyCode() != KeyEvent.VK_SHIFT
+				&& e.getKeyCode() != KeyEvent.VK_BACK_SPACE) {
 			Main.window.frame.UserInput += e.getKeyChar();
 		}
 		if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE && Main.window.frame.UserInput.length() > 0) {
 			Main.window.frame.UserInput = Main.window.frame.UserInput
 					.substring(0, Main.window.frame.UserInput.length() - 1);
-		}
-		if(e.getKeyCode() == KeyEvent.VK_ENTER){
-			
 		}
 	}
 

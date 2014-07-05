@@ -56,13 +56,13 @@ public class Frame extends JPanel {
 		if (Main.window.TitleScreen == true) {
 			g.drawImage(Background, 0, 0, getWidth(), getHeight(), this);
 			g.setColor(Color.white);
-			g.setFont(new Font("VT323", Font.PLAIN, getHeight() / 12));
+			g.setFont(new Font("VT323", Font.PLAIN, getHeight() / 10));
 			if (second == 1) {
-				g.drawString("Digitized: " + UserInput + "_", getWidth() / 70, getHeight() / 12);
+				g.drawString("Digitized: " + UserInput + "_", getWidth() / 70, getHeight() / 10);
 			} else {
-				g.drawString("Digitized: " + UserInput, getWidth() / 70, getHeight() / 12);
+				g.drawString("Digitized: " + UserInput, getWidth() / 70, getHeight() / 10);
 			}
-			g.drawString("Type help for more info", getWidth()/70, getHeight()-(getHeight()/20));
+			g.drawString("Type help for help", getWidth()/70, getHeight()-20);
 		}
 	}
 }

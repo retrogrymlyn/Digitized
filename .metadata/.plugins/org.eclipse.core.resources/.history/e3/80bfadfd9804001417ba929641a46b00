@@ -62,7 +62,7 @@ public class Frame extends JPanel {
 			} else {
 				g.drawString("Digitized: " + UserInput, getWidth() / 70, getHeight() / 12);
 			}
-			g.drawString("Type help for more info", getWidth()/70, getHeight()-(getHeight()/20));
+			g.drawString("Type help for more info", getWidth()/70, getHeight()-(getHeight()/12));
 		}
 	}
 }
