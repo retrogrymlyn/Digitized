@@ -27,17 +27,25 @@ public class Window implements KeyListener {
 
 		window.setVisible(true);
 	}
-
+	
+	//Keyboard input from the user.
 	public void keyPressed(KeyEvent e) {
-		if (e.getKeyCode() != KeyEvent.VK_SHIFT	&& e.getKeyCode() != KeyEvent.VK_BACK_SPACE && e.getKeyCode() != KeyEvent.VK_ENTER) {
-			Main.window.frame.UserInput += e.getKeyChar();
+		if (e.getKeyCode() != KeyEvent.VK_SHIFT && e.getKeyCode() != KeyEvent.VK_BACK_SPACE && e.getKeyCode() != KeyEvent.VK_ENTER) {
+			frame.UserInput += e.getKeyChar();
 		}
-		if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE && Main.window.frame.UserInput.length() > 0) {
-			Main.window.frame.UserInput = Main.window.frame.UserInput
-					.substring(0, Main.window.frame.UserInput.length() - 1);
+		
+		if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE && frame.UserInput.length() > 0) {
+			frame.UserInput = frame.UserInput.substring(0, frame.UserInput.length() - 1);
 		}
-		if(e.getKeyCode() == KeyEvent.VK_ENTER){
-			
+		
+		if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+			if (frame.UserInput.equalsIgnoreCase("help")) {
+				//help screen will go here
+				
+			} else {
+				frame.UnknownCommand = true;
+			}
+			frame.UserInput = "";
 		}
 	}
 
@@ -46,6 +54,6 @@ public class Window implements KeyListener {
 	}
 
 	public void keyTyped(KeyEvent e) {
-
+		
 	}
 }

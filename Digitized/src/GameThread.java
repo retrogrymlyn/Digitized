@@ -3,7 +3,9 @@ public class GameThread implements Runnable {
 	
 	Thread thread = new Thread(this);
 	
-	int second = 0;
+	int timer = 0;
+	int CustomTimer = 0;
+	boolean customTiming = false;
 	
 	//Starts the thread.
 	public void start(){
@@ -16,15 +18,26 @@ public class GameThread implements Runnable {
 	public void run() {
 		while (true){
 			Main.window.frame.repaint();
-			second += 1;
-			if(second >= 29){
-				second = 0;
-				if(Main.window.frame.second == 0){
-					Main.window.frame.second = 1;
+			timer += 1;
+			if(customTiming){
+				CustomTimer += 1;
+			}
+			
+			
+			//second
+			if(timer % 58 == 0){
+				timer = 0;
+			}
+			
+			//half second
+			if(timer % 29 == 0){
+				if(Main.window.frame.halfSecond == 0){
+					Main.window.frame.halfSecond = 1;
 				}else{
-					Main.window.frame.second = 0;
+					Main.window.frame.halfSecond = 0;
 				}
 			}
+			
 			try {
 				Thread.sleep(17);
 			} catch (InterruptedException e) {
