@@ -12,7 +12,6 @@
 		Mud
 		SWAMP
 			Lillypads
-			Mucky?
 			Aquatic Plants
 			Aquatic Flowers
 		Water
