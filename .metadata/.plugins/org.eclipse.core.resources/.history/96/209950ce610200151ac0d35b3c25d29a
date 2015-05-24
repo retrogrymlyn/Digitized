@@ -1,0 +1,56 @@
+package com.retrodough.rendering;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+import javax.swing.JPanel;
+
+import com.retrodough.engine.GameThread;
+
+public class Frame extends JPanel {
+	private static final long serialVersionUID = 1L;
+
+	BufferedImage img;
+	
+	public static String UserInput = "";
+	
+	public static int screenType = 0;
+	public static final int TITLE_SCREEN = 1;
+	public static boolean UnknownCommand = false;
+
+
+	// What actually paints.
+	public void paint(Graphics g) {
+		Graphics f = img.getGraphics();
+		if (screenType == TITLE_SCREEN) {
+			TitleScreen(f);
+		}
+		g.drawImage(img, 0, 0, this);
+	}
+	
+	//Title screen
+	public void TitleScreen(Graphics g){
+		g.setColor(new Color(0xff000000));
+		g.fillRect(0,0,this.getWidth(),this.getHeight());
+		g.setColor(Color.white);
+		g.setFont(new Font("VT323", Font.PLAIN, getHeight() / 12));
+		
+		if (GameThread.animation > 30) {
+			g.drawString("Digitized: " + UserInput + "_", getWidth() / 70, getHeight() / 12);
+		} else {
+			g.drawString("Digitized: " + UserInput, getWidth() / 70, getHeight() / 12);
+		}
+		
+		if(UnknownCommand){
+			g.drawString("Unknown command", getWidth()/70, (getHeight()/12)*2);
+		}
+		g.drawString("Type help for more info", getWidth()/70, getHeight() - (getHeight()/20));
+	}
+	
+	// gathers any Images and stores them in variables.
+		public void gatherImages() {
+			
+		}
+}

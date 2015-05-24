@@ -1,0 +1,19 @@
+package engine;
+import rendering.Frame;
+import rendering.Window;
+
+
+
+public class Main {
+	
+	static Window window = new Window();
+	static GameThread tickThread = new GameThread();
+
+	public static void main(String[] args) {
+		Frame.screenType = Frame.TITLE_SCREEN;
+		Window.frame.gatherImages();
+		new Thread(tickThread).start();
+		window.startWindow();
+	}
+
+}

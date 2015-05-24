@@ -1,0 +1,69 @@
+package rendering;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.GraphicsEnvironment;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.io.File;
+import javax.swing.JPanel;
+
+public class Frame extends JPanel {
+	private static final long serialVersionUID = 1L;
+
+	private Image img;
+
+	private Image Background;
+
+	public int halfSecond = 0;
+	
+	public String UserInput = "";
+	
+	public static int screenType = 0;
+	public static final int TITLE_SCREEN = 1;
+	public boolean UnknownCommand = false;
+
+	// gathers any Images and stores them in variables.
+	public void gatherImages() {
+		Background = Toolkit.getDefaultToolkit().getImage(
+				"resources/BlackBackground.png");
+		try {
+			File fontFile = new File("resources/VT323.ttf");
+			Font font = Font.createFont(Font.TRUETYPE_FONT, fontFile);
+			GraphicsEnvironment ge = GraphicsEnvironment
+					.getLocalGraphicsEnvironment();
+			ge.registerFont(font);
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+
+
+	// What actually paints.
+	public void paint(Graphics g) {
+		if (screenType == TITLE_SCREEN) {
+			TitleScreen(g);
+			g.setColor(new Color(0xffff00ff));
+			g.fillRect(0,0,100,100);
+		}
+	}
+	
+	//Title screen
+	public void TitleScreen(Graphics g){
+		g.setColor(new Color(0xffffffff));
+		g.fillRect(0,0,Window.WIDTH,Window.HEIGHT);
+		g.setColor(Color.white);
+		g.setFont(new Font("VT323", Font.PLAIN, getHeight() / 12));
+		
+		if (halfSecond == 1) {
+			g.drawString("Digitized: " + UserInput + "_", getWidth() / 70, getHeight() / 12);
+		} else {
+			g.drawString("Digitized: " + UserInput, getWidth() / 70, getHeight() / 12);
+		}
+		
+		if(UnknownCommand){
+			g.drawString("Unknown command", getWidth()/70, (getHeight()/12)*2);
+		}
+		g.drawString("Type help for more info", getWidth()/70, getHeight() - (getHeight()/20));
+	}
+}
